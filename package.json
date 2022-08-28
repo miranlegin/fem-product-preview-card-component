@@ -1,13 +1,18 @@
 {
-  "name": "SITE_NAME",
+  "name": "FrontendMentor-challenge01",
   "version": "1.0.0",
-  "description": "Some description text",
+  "description": "Product preview card component",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miranlegin/fem-product-preview-card-component"
+  },
   "devDependencies": {
-    "autoprefixer": "^7.2.5",
+    "autoprefixer": "^10.4.8",
     "grunt": "^1.5.3",
     "grunt-assemble": "^0.6.3",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-postcss": "^0.9.0"
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "postcss": "^8.4.16"
   }
 }
