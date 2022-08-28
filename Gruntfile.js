@@ -38,7 +38,9 @@ module.exports = function (grunt) {
         },
         processors: [
           require('autoprefixer')({
-            browsers: ['last 2 versions'],
+            overrideBrowserslist: [
+              '> 0.5%, last 2 versions, Firefox ESR, not dead',
+            ],
           }),
         ],
       },
