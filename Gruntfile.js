@@ -25,7 +25,7 @@ module.exports = function (grunt) {
           style: 'compressed',
         },
         files: {
-          'css/compiled.css': 'sass/main.scss',
+          'dist/css/compiled.css': 'sass/main.scss',
         },
       },
     },
@@ -34,7 +34,7 @@ module.exports = function (grunt) {
       options: {
         map: {
           inline: false,
-          annotation: 'css/maps/',
+          annotation: 'dist/css/maps/',
         },
         processors: [
           require('autoprefixer')({
@@ -45,7 +45,7 @@ module.exports = function (grunt) {
         ],
       },
       dist: {
-        src: 'css/*.css',
+        src: 'dist/css/*.css',
       },
     },
 
