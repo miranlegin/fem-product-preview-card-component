@@ -1,0 +1,101 @@
+body {
+  background-color: $primary-cream;
+  color: $neutral-gray;
+  font-family: $ff-body;
+  font-size: $fs-base;
+  font-weight: $fw-regular;
+  line-height: 1.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card {
+  max-width: 37.5rem;
+  background-color: $white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  @media (min-width: $bp) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &-data {
+    padding: 1.5rem;
+
+    @media (max-width: 639px) {
+      & > * + * {
+        margin-top: 0.75rem;
+      }
+    }
+
+    @media (min-width: $bp) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+  }
+
+  &-sup {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5ch;
+  }
+
+  &-title {
+    font-family: $ff-accent;
+    font-size: 2rem;
+    font-weight: $fw-bold;
+    line-height: 1;
+    color: $neutral-blue;
+  }
+
+  &-body {
+  }
+
+  &-price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-new {
+      font-family: $ff-accent;
+      font-size: 2rem;
+      font-weight: $fw-bold;
+      color: $primary-dark;
+      margin-right: 1ch;
+    }
+
+    &-old {
+      text-decoration: line-through;
+    }
+  }
+
+  &-cta {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    background-color: $primary-dark;
+    color: $white;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 1em;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($primary-dark, 20%);
+    }
+  }
+}
