@@ -15,6 +15,6 @@
 .DS_Store
 .prettierignore
 
-node_modules/
-product-preview-card-component-main/
 .sass-cache/
+node_modules/
+DESIGN/
